@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+          
+            hmtl {
+                font-size: 62.5%;
+            }
+            .card {
+                width: 400px;
+                height: 500px;
+                background-color: black;
+                border-radius: 20px;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+            .card img:nth-child(1){
+                width: 100%;
+                grid-column: 1/6; 
+                grid-row: 1/4;
+            }
+            .card img:nth-child(2){
+                width: 157%;
+                border-radius: 90px;
+                border: 8px solid black;
+                top: 80px;
+                left: 25%;
+                grid-column: 3;
+                grid-row: 3;
+                justify-self: center;
+            }
+            .card button:hover {
+                background-color:blueviolet;
+            }
+            .card button {
+                grid-column: 1/8;
+                bottom: 0px;
+                background-color: #A23119;
+                display: block;
+                border: 0px;
+                color: white;
+                font-size: 1.5rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .personal-data{
+                grid-column: 1/6;
+                grid-row: 4/5;
+                justify-self: center;
+                color: white;
+                top: 257px;
+                left: 9px;
+                font-size: 13px;
+            }
+            .personal-data-2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .personal-data p {
+                margin: 3px 20px 3px 20px;
+            }
+            .follows{
+                grid-column: 1/6;
+                grid-row: 5/7;
+                justify-self: center;
+                color: white;
+                margin-top: 16px;
+            }       
+            .follows-2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            } 
+            .follows-2 p {
+                margin: 4px 0px 20px 0px;
+                padding: 0px 25px 0px 25px;
+                text-align: center;
+            }
+            .follows-2 p:nth-child(1){
+                font-size: 24px;
+                font-style: italic;
+            }
+            .follows-2 p:nth-child(2){
+                font-size: 15px;
+                font-weight: bold; 
+            }
+            .follows-container {
+                border: 2px solid grey;
+                border-radius: 5px;
+                margin: 5px 6px 5px 22px;
+                height: 75px;
+                width: 144px;
+            }
+            .name {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-size: 1.1rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+            <section class="card">
+                <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="background">
+                <img src="./photo.png" alt="photo">
+                <button>Follow</button>                
+                
+                
+                <section class="personal-data">
+                    <section class="personal-data-2">
+                        <p>🌐 Spain</p>
+                        <div class="name">
+                            <p>David Jurado Benito</p>
+                            <p>Celia Mateo González</p>
+                        </div>
+                        <p>📩 Email</p>
+                    </section>
+                </section>
+                
+                <section class="follows">
+                    <div class="follows-2">
+                        <div class="follows-container">
+                            <p>Followers</p>
+                            <p>3520</p>
+                        </div>
+                        <div class="follows-container">
+                            <p>Following</p>
+                            <p>230</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+    </body>
+</html> 
